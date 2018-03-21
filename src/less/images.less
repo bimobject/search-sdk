@@ -1,0 +1,26 @@
+.siema-wrapper {
+    position: relative;
+    .siema{}
+
+    .control {
+        user-select: none;
+        position: absolute;
+        cursor:pointer;
+        width:2em;
+        height: 2em;
+        font-size:40px;
+        z-index: 1;
+        font-style: normal;
+        top:50%;
+        bottom:50%;
+
+        &.next{
+            right:-1.3em;
+        }
+
+        &.prev{
+            left: -1.3em;
+        }
+    }
+
+}

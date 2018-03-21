@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>controllers/result.controller.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-communicatorService.html">communicatorService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.abortSearch">abortSearch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.authURL">authURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.downloadProduct">downloadProduct</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.getProduct">getProduct</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.getProductPropertySets">getProductPropertySets</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.goToLoginPage">goToLoginPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.isAuthorized">isAuthorized</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.search">search</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-detailController.html">detailController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addCloseClickListener">addCloseClickListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addDownloadClickListeners">addDownloadClickListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addPropertiesTable">addPropertiesTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~close">close</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~createDownloadsSection">createDownloadsSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~createRegionsSection">createRegionsSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~generateImages">generateImages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~getId">getId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~parseDate">parseDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~parsePropertyValue">parsePropertyValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~scrollToMiddle">scrollToMiddle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~showProduct">showProduct</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-resultController.html">resultController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~addClickListeners">addClickListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~appendResults">appendResults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~isOnLastRow">isOnLastRow</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~loading">loading</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~loadingMore">loadingMore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~setReferenceElementId">setReferenceElementId</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-searchController.html">searchController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addBackToTopListener">addBackToTopListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addClearSearchListener">addClearSearchListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addInfiniteScroll">addInfiniteScroll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~infiniteScroll">infiniteScroll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~isSearching">isSearching</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~timer">timer</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">controllers/result.controller.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module resultController
+     *  @exports init()
+    *   @exports clear()
+        @exports loading()
+        @exports appendResults()
+        @exports loadingMore()
+ */
+
+import {
+    resultTemplate
+} from '../templates/result.template';
+import {
+    loaderTemplate
+} from '../templates/loader.template';
+
+let results = {};
+let allElements;
+
+/**
+ * init - Initializes the result view and inserts into the DOM.
+ *
+ * @param {Object} data The response data from the search GET request.
+ *
+ */
+const init = (data) => {
+    if (data) {
+        let resultsItems = [];
+        for (var i = 0; i &lt; data.length; i++) {
+            let item = resultTemplate(data[i]);
+            resultsItems.push(item);
+        }
+        if (resultsItems.length === 0) {
+            results.innerHTML = `&lt;p class="no-results">Sorry, no results...&lt;/p>`;
+        } else {
+            results.innerHTML = resultsItems.join('');
+            addClickListeners(data);
+        }
+    }
+};
+
+/**
+ * appendResults - Appends more results to the results view when the bottom of the page is reached.
+ *
+ * @param {type} data The response data from the search GET request
+ *
+ */
+const appendResults = (data) => {
+    let resultsItems = [];
+    for (var i = 0; i &lt; data.length; i++) {
+        let item = resultTemplate(data[i]);
+        resultsItems.push(item);
+    }
+    let nodes = document.createRange().createContextualFragment(resultsItems.join(''));
+
+    results.appendChild(nodes);
+    addClickListeners(data);
+};
+
+/**
+ * addClickListeners - Add eventListeners to open up the detail view for a product.
+ *
+ * @param {Object} data The response data from the search GET request
+ *
+ */
+const addClickListeners = (data) => {
+    allElements = Array.from(document.getElementsByClassName('result-item'));
+    let newElements = allElements.filter(el => el.getAttribute('has-listener') === null);
+    for (let i = 0; i &lt; newElements.length; i++) {
+        newElements[i].setAttribute('has-listener', true);
+        newElements[i].addEventListener('click', () => {
+            let itemsPerRow = Math.round(results.getBoundingClientRect().width / (newElements[i].clientWidth + 40)); // Check to see how many items that will fit in a row in the results div. +40 is to include margins
+            setReferenceElementId(itemsPerRow, newElements[i]);
+            if (!window.bim.isLoading) {
+                window.location.hash = '#detail-inline/' + data[i].id;
+            }
+        });
+    }
+};
+
+/**
+ * setReferenceElementId - Calculate which is the LAST ELEMENT ON THE ROW to have as reference when appending the detail view to the HTML
+ * Adds the ID of that element to window.bim.firstElementOnNextRowId or window.bim.lastElementInArrayId
+ *
+ * @param {type} itemsPerRow    Number of items that will fit in a row with current screen size
+ * @param {type} currentElement The clicked element that will be opened/selected
+ *
+ */
+const setReferenceElementId = (itemsPerRow, currentElement) => {
+    // Element is on the last row that could contain fewer items then the rest of the rows - get the ID of the last element of the result array which will also be the last element on the last row
+    if (isOnLastRow(itemsPerRow)) {
+        let element = allElements[allElements.length - 1];
+        if (element) {
+            window.bim.referenceElementId = element.getAttribute('id');
+        };
+        // Get the index of the current element, calculate its position on the current row and how many elements are left on that row. Use currentElementIndex + the number of elements left to get the last element on that row.
+    } else {
+        let currentElementIndex = allElements.findIndex(el => el === currentElement);
+        let currentRowPosition = (currentElementIndex % itemsPerRow) + 1;
+        let itemsLeftOnRow = itemsPerRow - currentRowPosition;
+        let element = allElements[currentElementIndex + itemsLeftOnRow];
+        if (element) {
+            window.bim.referenceElementId = element.getAttribute('id');
+        };
+    }
+};
+
+/**
+ * isOnLastRow - Checks to see if the element is this row an 'odd row' e.g the last row of results. Compares the number of items on the current row with the number of items on the first row.
+ *
+ * @param {type} itemsOnCurrentRow The number of items on the row of the selected element
+ *
+ * @returns {boolean} Is this row an 'odd row' e.g the last row of results
+ */
+const isOnLastRow = (itemsOnCurrentRow) => {
+    let itemsOnFirstRow = Math.round(results.getBoundingClientRect().width / (allElements[0].clientWidth + 40));
+    return itemsOnCurrentRow !== itemsOnFirstRow;
+};
+
+/**
+ * clear - Clears the results element.
+ *
+ */
+const clear = () => {
+    results.innerHTML = '';
+};
+
+/**
+ * loading - Adds or removes a loader spinner from the main results element.
+ *
+ * @param {boolean} loading Bool to set loader on or off.
+ *
+ */
+const loading = (loading) => {
+    results = document.getElementById('results');
+
+    if (loading) {
+        results.innerHTML = loaderTemplate();
+    } else {
+        results.innerHTML = '';
+    }
+};
+
+/**
+ * loadingMore - Adds or remove a loader spinner from the bottom of the results view. Used when loading more results on scroll.
+ *
+ * @param {boolean} loadingMore Bool to set loader on or off.
+ *
+ */
+const loadingMore = (loadingMore) => {
+    if (loadingMore) {
+        window.bim.isLoading = true;
+        let element = document.getElementById('loading');
+        if (element) {
+            element.innerHTML = loaderTemplate();
+        }
+    } else {
+        window.bim.isLoading = false;
+        let element = document.getElementById('loading');
+        if (element) {
+            element.innerHTML = '';
+        }
+    }
+};
+
+export default {
+    /**
+ * Get the red, green, and blue values of a color.
+ * @function
+ * @param {string} color - A color, in hexadecimal format.
+ * @returns {Array.&lt;number>} An array of the red, green, and blue values,
+ * each ranging from 0 to 255.
+ */init: init,
+    clear: clear,
+    loading: loading,
+    appendResults: appendResults,
+    loadingMore: loadingMore
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Mar 06 2018 08:59:39 GMT+0100 (W. Europe Standard Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

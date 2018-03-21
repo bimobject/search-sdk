@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>controllers/search.controller.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-communicatorService.html">communicatorService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.abortSearch">abortSearch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.authURL">authURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.downloadProduct">downloadProduct</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.getProduct">getProduct</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.getProductPropertySets">getProductPropertySets</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.goToLoginPage">goToLoginPage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.isAuthorized">isAuthorized</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-communicatorService.html#.search">search</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-detailController.html">detailController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addCloseClickListener">addCloseClickListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addDownloadClickListeners">addDownloadClickListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~addPropertiesTable">addPropertiesTable</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~close">close</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~createDownloadsSection">createDownloadsSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~createRegionsSection">createRegionsSection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~generateImages">generateImages</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~getId">getId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~parseDate">parseDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~parsePropertyValue">parsePropertyValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~scrollToMiddle">scrollToMiddle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-detailController.html#~showProduct">showProduct</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-resultController.html">resultController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~addClickListeners">addClickListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~appendResults">appendResults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~isOnLastRow">isOnLastRow</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~loading">loading</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~loadingMore">loadingMore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-resultController.html#~setReferenceElementId">setReferenceElementId</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-searchController.html">searchController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addBackToTopListener">addBackToTopListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addClearSearchListener">addClearSearchListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~addInfiniteScroll">addInfiniteScroll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~infiniteScroll">infiniteScroll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~isSearching">isSearching</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~search">search</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-searchController.html#~timer">timer</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">controllers/search.controller.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module searchController
+ * @exports init()
+ */
+
+import externalCommunicator from '../external/communicator.service.js';
+import resultCtrl from './result.controller';
+import {searchTemplate} from '../templates/search.template';
+import debounce from 'lodash/debounce';
+
+const main = document.getElementById('main');
+let currentPage = 0;
+let totalPages = 0;
+let searchValue = '';
+let isLoadingMore = false;
+let searchStart = 0;
+
+/**
+ * init - Initializes the main search view
+ *
+ */
+const init = () => {
+    main.innerHTML = searchTemplate();
+    addSearchInputListener();
+    addClearSearchListener();
+    addBackToTopListener();
+    addInfiniteScroll();
+    if (searchValue !== '') {
+        document.getElementById('search-input').value = searchValue;
+        search();
+    }
+};
+
+const addSearchInputListener = () => {
+    let searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('keyup', search);
+};
+
+/**
+ * addClearSearchListener - Adds eventlisteners to clear the search box
+ *
+ */
+const addClearSearchListener = () => {
+    let clearSearch = document.getElementById('clear-search');
+    clearSearch.addEventListener('click', clear);
+};
+
+/**
+ * addBackToTopListener - Adds eventlisteners to scroll to the top of the page and to remove the up chevron when at the top of the page
+ *
+ */
+const addBackToTopListener = () => {
+    let backToTop = document.getElementById('to-top');
+    backToTop.addEventListener('click', () => {
+        window.scrollTo(0, 0);
+    });
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            backToTop.classList.add('showing');
+        } else {
+            backToTop.classList.remove('showing');
+        }
+    });
+};
+
+/**
+ * search - Gets the value from the search field, verifies that length of it and calls debounceSearch with the value.
+ *
+ */
+const search = () => {
+    timer('start');
+    searchValue = document.getElementById('search-input').value;
+    if (searchValue.length === 0) {
+        clear();
+        externalCommunicator.abortSearch();
+    } else {
+        isSearching(true);
+        debounceSearch(searchValue);
+    }
+};
+
+const debounceSearch = debounce(() => {
+    resultCtrl.loading(true);
+    externalCommunicator.search({
+        searchText: encodeURIComponent(searchValue),
+        page: 1
+    }, (response) => {
+        if (response.data) {
+            currentPage = response.meta.page;
+            totalPages = response.meta.totalPages;
+            resultCtrl.loading(false);
+            resultCtrl.init(response.data);
+            timer('stop', response.meta.totalCount);
+        } else {
+            timer('clear');
+            isSearching(false);
+            resultCtrl.clear();
+        }
+    });
+}, 300);
+
+/**
+ * isSearching - Adds or removes CSS classes to make the search field and logo smaller when displaying results
+ *
+ * @param {boolean} searching Bool to add or remove the CSS.
+ *
+ */
+const isSearching = (searching) => {
+    let mainCol = document.getElementById('search');
+    let logo = document.getElementById('logo');
+    if (searching) {
+        mainCol.classList.add('searching');
+        logo.classList.add('searching');
+    } else {
+        mainCol.classList.remove('searching');
+        logo.classList.remove('searching');
+    }
+};
+
+/**
+ * clear - Clears the search field, including removing CSS classes etc to set everything back to the initial state
+ *
+ */
+const clear = () => {
+    document.getElementById('search-input').value = '';
+    timer('clear');
+    isSearching(false);
+    resultCtrl.clear();
+};
+
+/**
+ * addInfiniteScroll - Adds eventlisteners to fetch more products when you scroll to the bottom
+ *
+ */
+const addInfiniteScroll = () => {
+    document.addEventListener('scroll', infiniteScroll);
+};
+
+/**
+ * infiniteScroll - GETs the next page of results (if there is one) and calls for appendResults to add them to the bottom of the list.
+ *
+ */
+const infiniteScroll = () => {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 250) {
+        if (currentPage &lt; totalPages &amp;&amp; isLoadingMore === false) {
+            isLoadingMore = true;
+            resultCtrl.loadingMore(isLoadingMore);
+            externalCommunicator.search({
+                searchText: encodeURIComponent(searchValue),
+                page: currentPage + 1
+            }, (response) => {
+                resultCtrl.appendResults(response.data);
+                currentPage = currentPage + 1;
+                isLoadingMore = false;
+                resultCtrl.loadingMore(isLoadingMore);
+            });
+        }
+    }
+};
+
+/**
+ * timer - Timer to display how long the search took below the search field
+ *
+ * @param {string} command Command to start, stop or clear the timer
+ * @param {number} results Number of results found in the search
+ *
+ */
+const timer = (command, results) => {
+    if (command === 'start') {
+        timer('clear');
+        searchStart = new Date().getTime();
+    } else if (command === 'stop') {
+        let stopTime = new Date().getTime();
+        let searchTime = (stopTime - searchStart) / 1000;
+        document.getElementById('search-time').innerHTML = `Found ${results} BIMobjects in ${searchTime} seconds.`;
+    } else if (command === 'clear') {
+        document.getElementById('search-time').innerHTML = '';
+    }
+};
+
+export default {
+    init: init
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Mar 06 2018 08:59:39 GMT+0100 (W. Europe Standard Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

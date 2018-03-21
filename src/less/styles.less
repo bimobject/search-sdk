@@ -1,0 +1,33 @@
+@import './grid.less';
+@import './detail.less';
+@import './search.less';
+@import './result.less';
+@import './accordion.less';
+@import './downloads.less';
+@import './loader.less';
+@import './images.less';
+
+@font-face {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  /* Add other formats as you see fit */
+  src: url("../assets/fonts/OpenSans-Light.ttf") format("truetype"),
+  url("../assets/fonts/OpenSans-Bold.ttf") format("truetype"),
+  url("../assets/fonts/OpenSans-Italic.ttf") format("truetype"),
+  url("../assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"),
+  url("../assets/fonts/OpenSans-Regular.ttf") format("truetype"),
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background: #f9f9f9;
+  color: #555;
+  line-height: 1.3em;
+  webview {
+    height:90vh;
+    border: 2px dotted #00aff0;
+  }
+}

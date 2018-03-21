@@ -1,0 +1,79 @@
+.download {
+    .tab {
+        border: 1px solid #ddd;
+        &:hover{
+          transition: border 0.1s linear;
+          border: 1px solid #a6a6a6;
+        }
+    }
+}
+
+.download-item {
+    border-top: 1px solid #ddd;
+    width: 100%;
+
+    .icon {
+        display: table;
+        float: left;
+        height: 20px;
+        margin-right: 10px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .text {
+        float: left;
+        padding: .5em 0;
+
+        .file-name {
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // width: 11em;
+        }
+
+        .info {
+            margin-top: 0.5em;
+            font-style: italic;
+        }
+    }
+
+    .button {
+        background-color: white;
+        border: 2px solid #e7e7e7;
+        padding: 5px 20px;
+        display: inline-block;
+        font-size: 10px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        width: 9.1em;
+
+        &:hover {
+            background-color: #e7e7e7;
+        }
+
+        &.download-button {}
+
+        &.link-button {}
+    }
+
+    .buttons {
+        float: right;
+        margin: .5em 0;
+    }
+}
+
+.tab-icon {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}

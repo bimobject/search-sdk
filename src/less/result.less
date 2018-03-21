@@ -1,0 +1,100 @@
+.product-list {
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .inline-item {
+        cursor: default;
+        max-height: 200px;
+        flex: 0 0 100%;
+
+        &.showing {
+            overflow: hidden;
+            max-height: 4000px;
+            transition: all 1s;
+        }
+    }
+
+    .result-item {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        padding: 1em;
+        margin: 1em;
+        flex: 1;
+        transition: box-shadow 0.1s linear;
+        background: #fff;
+        //transition: opacity 1s ease-out;
+        .image {
+            margin: 0 auto;
+
+            img {
+                width: inherit;
+                margin-bottom: 5px;
+            }
+
+            &.brand {
+                width: 4em;
+                img {
+                    height: 15px;
+                    width: auto;
+                }
+            }
+
+            &.product {
+                width: 8em;
+            }
+        }
+
+        .product-name {
+            width:10em;
+            margin:0 auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            color: #333;
+        }
+
+        .brand-name {
+            font-size: 14px;
+            margin-top: 1em;
+            color: #999;
+        }
+
+        &:hover {
+            transition: box-shadow 0.1s linear;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.28);
+            cursor: pointer;
+        }
+
+        &.selected {
+            position: relative;
+            border: 1px solid #00aeef;
+            // The pseudo element triangle
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -21px;
+                width: 0;
+                margin-left: -20px; // The width of the triangle
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #00aeef;
+                clear: both;
+            }
+        }
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.no-results {
+    margin: 0 auto;
+}

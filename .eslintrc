@@ -1,0 +1,27 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": "standard",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6
+
+    },
+    "globals": {
+        "HOST": true
+    },
+    "rules": {
+        "standard/no-callback-literal": false,
+        "semi": ["error", "always"],
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+        }]
+    }
+}

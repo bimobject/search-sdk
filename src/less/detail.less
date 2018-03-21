@@ -1,0 +1,125 @@
+.left {
+    text-align: center;
+}
+
+.right {
+    .product-name {
+        margin-top: 1em;
+        font-size: 32px;
+        color: #333;
+        font-weight: 300;
+    }
+
+    .brand-name {
+        font-size: 24px;
+        margin-top: .5em;
+        color: #999;
+    }
+}
+
+.detail-card {
+    padding: 2em;
+    margin: 0 -2em !important;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: #fff;
+
+    &.view {
+        .close-detail {
+            right: 2em;
+        }
+    }
+
+    .close-detail {
+        position: absolute;
+        opacity: 0.5;
+        right: 3em;
+        top: 1em;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.file-name {
+    font-family: monospace;
+}
+
+img {
+    width: 100%;
+    max-width: 385px;
+}
+
+.properties {
+    font-size: 16px;
+    margin-top: 1em;
+
+    label {
+        display: inline-block;
+        width: 40%;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em;
+
+    .header {
+        text-align: left;
+        width: 40%;
+        font-size: 12px;
+    }
+
+    .data {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    tr {
+        border: solid #ddd;
+        border-width: 0.5px 0;
+        line-height: 2.5;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fff;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+}
+
+.country-name {
+    display: inline-grid;
+    line-height: 1;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0.25em;
+    padding: .2em .4em;
+    font-size: 12px;
+}
+
+.region {
+    margin: 1em;
+    h4 {
+        margin: 0;
+    }
+}
+
+.world-wide {
+    margin: 1.5em;
+}
+
+.download {
+    margin-top: 1em;
+    text-align: left;
+}

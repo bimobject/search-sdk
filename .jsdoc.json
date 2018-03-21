@@ -1,0 +1,19 @@
+{
+    "source": {
+        "include": ["src", "package.json", "README.md"],
+        "includePattern": ".js$"
+    },
+    "templates": {
+        "cleverLinks": true
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "destination": "./docs",
+        "encoding": "utf8",
+        "private": false,
+        "recurse": true,
+        "template": "node_modules/minami"
+    }
+}
