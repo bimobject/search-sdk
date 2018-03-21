@@ -3,6 +3,8 @@
 This is BIMobject's product browser and downloader. It's a minimal project: only ~80KB minified (excluding fonts) since it uses no framework at all.
 Take a look at our [API documentation](https://developer.bimobject.com/app/docs) to read more about how to setup an app and get started!
 
+If you choose to extend your application with this SDK, in accordance with the licence, please don't move any copyright notice or BIMobject® logo or trademark. But please feel free to modify or change it in any way!
+
 ## Dependencies
 
 To build or develop this project you need the following dependencies.
