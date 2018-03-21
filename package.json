@@ -5,7 +5,7 @@
     "main": "index.js",
     "repository": "git@bitbucket.org:bimobjectab/search.bimobject.com.git",
     "author": "Pétur & Nils",
-    "license": "MIT",
+    "license": "ISC",
     "private": true,
     "scripts": {
         "start": "electron electron/app.js",
