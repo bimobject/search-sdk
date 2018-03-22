@@ -18,7 +18,7 @@ To build or develop this project you need the following dependencies.
 - Run `yarn run watch` or `npm run watch` to build and continuously watch the `src/` folder for changes.
 - Run `yarn run start` or `npm run start` to run the electron server.
 
-This project needs a host to run properly, the idea is that you should be able to choose whatever host you want, i.e. `electron`, `WebBrowserControl`, `CEF` or similar. This is application comes with a example host application built with `electron`. Just input your own credentials in `openapi.js` to test it out.
+This project needs a host to run properly, the idea is that you should be able to choose whatever host you want, i.e. `electron`, `WebBrowserControl`, `CEF` or similar. This application comes with an example host application built with `electron`. Just input your own credentials in `openapi.js` to try it out.
 
 If you choose some other host it is required that you attach a set of functions on the host `window`.
 
