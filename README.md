@@ -135,4 +135,4 @@ In the `webpack.config.js` we specify what type of files we would like to load a
     entry.js
 ```
 
-The `entry.js` file is the entry point of the app. There we include our styles and our code. Since we are using import modules, no functions is available on global scope and can only be used inside that controller (if not exported).
+The `entry.js` file is the entry point of the app. There we include our styles and our code. Since we are using import modules, no functions are available on global scope and can only be used inside that controller (if not exported).
