@@ -4,7 +4,7 @@
     "description": "A SDK for BIM search page. Use it as is or modify it as you wish.",
     "main": "index.js",
     "repository": "git@github.com:bimobject/search-sdk.git",
-    "author": "Pétur & Nils",
+    "author": "Pétur Hjartarson <petur.hjartarson@bimobject.com> & Nils Carlsson <nils.carlsson@bimobject.com> (https://github.com/bimobject)",
     "license": "ISC",
     "private": true,
     "scripts": {
