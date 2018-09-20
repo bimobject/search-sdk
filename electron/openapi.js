@@ -21,7 +21,7 @@ let authGetAuthPKCode = {
     scope: 'search_api search_api_downloadbinary offline_access',
     client_id: '', // This is AuthorizationCodeWithProofKey flow "app". Create your own on https://developer.bimobject.com.
     code_challenge_method: 'S256',
-    code_challenge: authHelper.codeChallange
+    code_challenge: authHelper.codeChallenge
 };
 
 let refreshAuthPKToken = {
