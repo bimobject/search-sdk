@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const openApi = require('./openapi');
+const url = require('url');
 
 let port = process.env.PORT || 9696;
 
@@ -20,9 +21,11 @@ app.use('/login', (req, res) => {
     const window = require('./app').getWindow();
 
     openApi.authorizeDownload(code, (location) => {
-        console.log(location);
-        window.loadURL(
-            path.join(__dirname, '../dist/index.html') + location
-        );
+        console.log('this is the location', location);
+        window.loadURL(url.format({
+            slashes: true,
+            protocol: 'file:',
+            pathname: path.join(__dirname, '../dist/index.html')
+        }));
     });
 });

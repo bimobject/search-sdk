@@ -19,7 +19,7 @@ app.once('ready', () => {
         external: {}
     });
     window.external = {};
-    window.setFullScreen(true);
+    window.setFullScreen(false);
     // Load a URL in the window to the local index.html path
     window.loadURL(url.format({
         slashes: true,
