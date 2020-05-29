@@ -5,6 +5,12 @@ Take a look at our [API documentation](https://developer.bimobject.com/app/docs)
 
 If you choose to extend your application with this SDK, in accordance with the licence, please don't move any copyright notice or BIMobject® logo or trademark. But please feel free to modify or change it in any way!
 
+# Note
+
+This project contains keys and secret to the API. They can be invalidated at any time. 
+
+If you want to create you're own app, remember to use the correct redirect URL. It's hard coded in this app to `localhost:9696/login`.
+
 ## Dependencies
 
 To build or develop this project you need the following dependencies.
