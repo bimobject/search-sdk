@@ -37,7 +37,7 @@
         "file-loader": "^1.1.6",
         "less": "^2.7.3",
         "less-loader": "^4.0.5",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.21",
         "minami": "^1.2.3",
         "request": "^2.83.0",
         "siema": "^1.5.1",
